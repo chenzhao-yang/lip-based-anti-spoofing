@@ -1,8 +1,8 @@
 import tensorflow as tf
 import tensorflow.contrib.keras as keras
-from .AutoEncoder import AutoEncoder
-from .base_estimator import BaseEstimator
-from .motionNet import motionNet
+from AutoEncoder import AutoEncoder
+from base_estimator import BaseEstimator
+from motionNet import motionNet
 
 class JointEstimator(BaseEstimator):
    

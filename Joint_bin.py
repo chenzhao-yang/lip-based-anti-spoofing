@@ -1,8 +1,8 @@
 import os
 import argparse
 import tensorflow as tf
-from .JointEstimator import JointEstimator
-from .dataset import tfrecord_input_fn
+from JointEstimator import JointEstimator
+from dataset import tfrecord_input_fn
 
 #CURRENT_FILE_DIRECTORY = os.path.abspath(os.path.dirname(__file__))
 
@@ -76,7 +76,7 @@ def main():
     # build input
 
     train_file = args.train_file
-    test_file = args.test_file
+    test_file = args.eval_file
 
     
     train_input_params = {

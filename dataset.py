@@ -66,7 +66,7 @@ def optical_parse_function(example_proto):
                 }
     targets = {
                 'label': parsed_features["label"]}
-     return (inputs,targets)
+    return (inputs,targets)
 
 def tfrecord_input_fn(file_name_pattern,
                            mode=tf.estimator.ModeKeys.EVAL,
